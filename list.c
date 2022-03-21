@@ -312,7 +312,7 @@ int sortListBubble(list *head)
             list *tmpNext = (node *)malloc(sizeof(node));
             tmpNext = tmpNode->right;
             // [OK] 3. Compare the current tmp Node position with all positions to the end of the tmpNext list
-            for (head->left != tmpNext->right)
+            while (head->left != tmpNext->right)
             {
                 // [OK] 4. Swap values to sort positions ascending
                 if (tmpNode->value > tmpNext->value)
